@@ -1,3 +1,16 @@
+# ---
+# jupyter:
+#   jupytext:
+#     cell_metadata_filter: title,-all
+#     formats: py:percent,ipynb
+#     text_representation:
+#       extension: .py
+#       format_name: percent
+#       format_version: '1.3'
+#       jupytext_version: 1.19.4
+# ---
+
+# %%
 # 파이썬의 숫자는 "정수"와 소수 부분이 있는 "부동 소수점 수"를 제공한다.
 
 # %%
@@ -61,11 +74,20 @@ i = {1, 2, 3}
 print(i)
 print(type(i))
 
+# print(i[0]) #error
+i = {1, 2, 3, 3}  # same variable would be ignored
+print(i)
+
+
 # %%
 # 10. 범위 (range)
 j = range(5)
 print(j)
 print(type(j))
+print(list(j))
+j2 = list(j)
+print(j2)
+print(type(j2))
 
 # %%
 # 11. 바이트 (bytes)
@@ -90,10 +112,16 @@ print(type(m))
 # 14. 함수 (function)
 def hello():
     print("Hello")
+    print("bye")
 
 
 print(hello)
 print(type(hello))
+hello()
+
+a = 10
+# a()
+# TypeError: 'int' object is not callable
 
 # %%
 # 15. 모듈 (module)

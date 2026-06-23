@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"/Users/pj/dev/20260623 TIL\\\" && ls pyproject.toml 2>/dev/null && echo \\\"exists\\\" || echo \\\"no pyproject.toml\\\"; cat pyproject.toml 2>/dev/null\",\"description\":\"Check whether project ha...",
-  "error": "Exit code 1\nno pyproject.toml",
-  "timestamp": "2026-06-23T03:01:35.456Z",
-  "retry_count": 1
-}
